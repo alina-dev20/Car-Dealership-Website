@@ -36,6 +36,13 @@ button {
     margin: 0 auto;
     padding: 0 10px;
 }
+.title-section {
+    font-size: 52px;
+    line-height: 64px;
+    margin-bottom: 40px;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
 .btn-primary {
     padding: 12px 24px;
     background-color: #EE8313;
@@ -43,6 +50,17 @@ button {
 }
 .btn-primary:hover{
     background-color: #ee5b06;
+}
+.btn-secondare {
+    padding: 12px 24px;
+    font-weight: 600;
+    color: #ee5b06;
+    border: 1px solid;
+    line-height: 26px;
+}
+.btn-secondare:hover {
+    color: #FFF;
+    border: 1px solid #FFF;
 }
 /* header */
 #header-section {
@@ -68,4 +86,156 @@ button {
 }
 .nav-main__link:hover {
     color: #EE8313;
+}
+/* Banner */
+#banner-section {
+    padding-bottom: 60px;
+    position: relative;
+}
+.banner {
+    max-width: 475px;
+}    
+.banner__header {
+     font-size: 52px;
+     line-height: 64px;
+     letter-spacing: 0.6px;
+}
+.banner__text {
+    margin: 32px 0 48px;
+    font-size: 17px;
+    color: rgb(255, 255, 255 / 80%);
+}
+.banner-links-wrap {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+.banner-features__text {
+    font-weight: 600;
+    line-height: 24px;
+}
+.banner-features__text_strong {
+    margin-right: 16px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+}
+.banner-img{
+    position: absolute;
+    width: 55%;
+    top: 0;
+    right: 0;
+    height: 100%; 
+}
+
+.banner-img::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url(img/mustang.png) no-repeat center center;
+    background-size: cover; /* чтобы изображение занимало всю высоту и ширину */
+}
+/* rent */
+#rent-section {
+    padding: 120px 0;
+}
+.rent-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.rent {
+    position: relative;
+    height: 524px;
+    background: url(img/supercar.png) 50%/cover no-repeat;
+    font-weight: 600;
+}
+.rent:nth-child(2) {
+    background-image: url(img/sportcar.png);
+}
+.rent:nth-child(3) {
+    background-image: url(img/suv.png);
+}
+.rent:nth-child(4) {
+    background-image: url(img/supersuv.png);
+}
+.rent-name {
+position: absolute;
+    top: 48px;
+    left: 48px;
+}
+/* services */
+#service-section {
+    padding-bottom: 120px;
+}
+.services-section__title {
+    margin-bottom: 60px;
+    text-align: left;
+}
+.services-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;    
+}
+.services-img {
+    margin-bottom: 24px;
+}
+.services-title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+}
+.services__text {
+    color: rgb(255, 255, 255 / 80%);
+}   
+/* detination */
+#destination-section {
+    padding-bottom: 162px ;
+}
+.destination-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; 
+}
+.destination {
+     border: 1px solid #171717;
+     background-color: #171717;
+}
+.destination-info {
+    padding: 24px;
+}
+.destination__title {
+    font-size: 24px;
+    line-height: 32px;
+}
+.destination__text {
+    margin: 10px 0 25px;
+    color: rgb(255, 255, 255 / 80%);
+}
+.destination__price {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 17px;
+    padding-left: 40px;
+}
+.destination__price::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url(img/car-logo.png) no-repeat center center;
+    background-size: contain; /* Убедитесь, что логотип не искажается */
+    transform: translateY(-50%);
+}
+.destination__link {
+    color: #EE8313;
+}
+.destination__link:hover {
+    color: #ee5b06;
 }
