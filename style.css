@@ -239,3 +239,113 @@ position: absolute;
 .destination__link:hover {
     color: #ee5b06;
 }
+#location-section {
+    padding-bottom: 102px;
+}
+#footer-section {
+    padding-top: 40px;
+    background-color: #1F1905;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
+.footer-logo-wrap {
+    display: flex;
+    align-items:center;
+    gap: 17px;
+    margin-bottom: 64px;
+}
+.footer-about__text {
+    max-width: 235px;
+    font-size: 18px;
+    line-height: 32px;
+}
+.footer-copyright {
+    background-color: #EE8313;
+    padding: 20px 0;
+}
+.footer-copyright__text{
+    text-align: center;
+}
+/* ===================
+   Адаптив для мобильных
+   =================== */
+   @media (max-width: 768px) {
+    /* Общие отступы для контейнера */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Заголовки */
+    .title-section, 
+    .banner__header {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    /* Меню */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-main__list {
+        flex-direction: column;
+        gap: 16px;
+        margin-right: 0;
+        margin-top: 16px;
+    }
+
+    /* Баннер */
+    #banner-section {
+        padding-bottom: 40px;
+    }
+    .banner {
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .banner-img {
+        position: relative;
+        width: 100%;
+        height: 300px; /* или auto */
+        top: 0;
+        right: 0;
+    }
+
+    /* Раздел rent */
+    .rent-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .rent {
+        height: 300px; /* уменьшаем высоту для телефонов */
+    }
+
+    /* Раздел services */
+    .services-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    /* Раздел destination */
+    .destination-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    /* Футер */
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-logo-wrap {
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+    .footer-about__text {
+        max-width: 100%;
+        text-align: center;
+    }
+}
